@@ -7,6 +7,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.text.selection.DisableSelection
+import androidx.compose.foundation.text.selection.SelectionContainer
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -40,7 +42,7 @@ class MainActivity : ComponentActivity() {
 fun Greeting(modifier: Modifier = Modifier.padding(25 .dp),
 
              ) {
-
+SelectionContainer {
     Column {
 
 
@@ -50,14 +52,18 @@ fun Greeting(modifier: Modifier = Modifier.padding(25 .dp),
             modifier = modifier.padding(25 .dp),
             fontStyle= FontStyle.Italic
         )
+DisableSelection {
 
-        Text(
-            text = "DENEME",
-            color = Color.Red,
-            modifier = modifier.padding(25 .dp),
-            fontStyle= FontStyle.Italic
-        )
+    Text(
+        text = "DENEME",
+        color = Color.Red,
+        modifier = modifier.padding(25 .dp),
+        fontStyle= FontStyle.Italic
+    )
+}
     }
+}
+
 }
 
 @Preview(showBackground = true)
