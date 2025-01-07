@@ -21,22 +21,23 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             JetpackComposeTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                Scaffold(modifier = Modifier.fillMaxSize()) { paddingValues ->
                     Greeting(
-
+                        modifier = Modifier.padding(paddingValues)
                     )
                 }
             }
         }
     }
 }
-@Composable
-fun Greeting() {
-Text(
-   text = "OBSS İŞ ",
-color = Color.Red
 
-)
+@Composable
+fun Greeting(modifier: Modifier = Modifier) {
+    Text(
+        text = "DENEME",
+        color = Color.Red,
+        modifier = modifier
+    )
 }
 
 @Preview(showBackground = true)
