@@ -8,5 +8,5 @@ import androidx.compose.ui.graphics.Color
 
 @Composable
 fun MyText(text:String, color: Color, size:Int){
-    Text(text = text,color=color, fontSize = size)
+    //Text(text = text,color=color, fontSize = size)
 }
