@@ -30,17 +30,16 @@ class MainActivity : ComponentActivity() {
                 Scaffold() {
 
                 }
-                Greeting(
-
-                )
+                Greeting()
             }
         }
     }
 }
 
 @Composable
-fun Greeting(modifier: Modifier = Modifier.padding(25 .dp)
-             ,orizontalAlignment: JdkConstants.HorizontalAlignment = HorizontalAlignment) {
+fun Greeting(modifier: Modifier = Modifier.padding(25 .dp),
+
+             ) {
 
     Column {
 
