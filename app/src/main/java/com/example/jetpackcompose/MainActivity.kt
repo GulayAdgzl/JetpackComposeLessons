@@ -44,29 +44,9 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(modifier: Modifier = Modifier.padding(25 .dp),
+fun Greeting() {
+MyText(text = "Gülasy", color = Color.Blue, size = 10 )
 
-             ) {
-
-   Box(modifier = Modifier.padding(10 .dp)) {
-        Alignment.CenterVertically
-        Arrangement.spacedBy(8 .dp)
-
-
-        Text(
-            text = "DENEME",
-            color = Color.Red,
-            modifier = modifier.padding(25 .dp),
-            fontStyle= FontStyle.Italic
-        )
-
-    Text(
-        text = "DENEME",
-        color = Color.Red,
-        modifier = modifier.padding(25 .dp),
-        fontStyle= FontStyle.Italic
-    )
-}
 
 
 }
