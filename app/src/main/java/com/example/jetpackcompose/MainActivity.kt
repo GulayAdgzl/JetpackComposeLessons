@@ -5,7 +5,9 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.selection.DisableSelection
@@ -44,8 +46,10 @@ class MainActivity : ComponentActivity() {
 fun Greeting(modifier: Modifier = Modifier.padding(25 .dp),
 
              ) {
-SelectionContainer {
-    Column {
+
+    Row {modifier.fillMaxSize()
+        Alignment.CenterVertically
+        Arrangement.spacedBy(8 .dp)
 
 
         Text(
@@ -54,7 +58,6 @@ SelectionContainer {
             modifier = modifier.padding(25 .dp),
             fontStyle= FontStyle.Italic
         )
-DisableSelection {
 
     Text(
         text = "DENEME",
@@ -63,8 +66,7 @@ DisableSelection {
         fontStyle= FontStyle.Italic
     )
 }
-    }
-}
+
 
 }
 
