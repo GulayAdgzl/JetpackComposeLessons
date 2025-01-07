@@ -6,6 +6,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -47,7 +48,7 @@ fun Greeting(modifier: Modifier = Modifier.padding(25 .dp),
 
              ) {
 
-    Row {modifier.fillMaxSize()
+   Box(modifier = Modifier.padding(10 .dp)) {
         Alignment.CenterVertically
         Arrangement.spacedBy(8 .dp)
 
