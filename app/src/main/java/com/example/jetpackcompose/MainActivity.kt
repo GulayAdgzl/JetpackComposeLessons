@@ -10,6 +10,8 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.jetpackcompose.ui.theme.JetpackComposeTheme
 
@@ -21,8 +23,7 @@ class MainActivity : ComponentActivity() {
             JetpackComposeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
+
                     )
                 }
             }
@@ -30,17 +31,18 @@ class MainActivity : ComponentActivity() {
     }
 }
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
+fun Greeting() {
+Text(
+   text = "OBSS İŞ ",
+color = Color.Red
+
+)
 }
 
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     JetpackComposeTheme {
-        Greeting("Android")
+        Greeting()
     }
 }
